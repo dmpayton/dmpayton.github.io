@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><title>not found | dmpayton.com</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><link rel="icon" href="https://s3.amazonaws.com/dmpayton-static/favicon.png" /><link rel="alternate" type="application/rss+xml" title="dmpayton.com" href="/feed/" /><link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Mate:400,400italic|Bitter" /><link type="text/css" rel="stylesheet" href="https://s3.amazonaws.com/dmpayton-static/css/normalize.css" /><link type="text/css" rel="stylesheet" href="https://s3.amazonaws.com/dmpayton-static/css/pygments/friendly.css" /><link type="text/css" rel="stylesheet" href="https://s3.amazonaws.com/dmpayton-static/css/dmpayton.css" /><!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]--><script type="text/javascript" src="https://s3.amazonaws.com/dmpayton-static/js/jquery.min.js"></script><!--<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/sopa/1.0/stopcensorship.js"></script>--><style type="text/css">
+        #fuck-sopa {
+            background: #000 url('http://americancensorship.org/images/stop-censorship-small.png') no-repeat center center;
+            display: block;
+            height: 30px;
+            text-align:center;
+            vertical-align: middle;
+            z-index:5555;
+        }
+    </style><!-- Mixpanel --><script type="text/javascript">
+        var mpq = [];
+        mpq.push(["init", "c30129b462b88552185708c3211fdda2"]);
+        (function(){var b,a,e,d,c;b=document.createElement("script");b.type="text/javascript";
+        b.async=true;b.src=(document.location.protocol==="https:"?"https:":"http:")+
+        "//api.mixpanel.com/site_media/js/api/mixpanel.js";a=document.getElementsByTagName("script")[0];
+        a.parentNode.insertBefore(b,a);e=function(f){return function(){mpq.push(
+        [f].concat(Array.prototype.slice.call(arguments,0)))}};d=["init","track","track_links",
+        "track_forms","register","register_once","identify","name_tag","set_config"];for(c=0;c<
+        d.length;c++){mpq[d[c]]=e(d[c])}})();
+    </script></head><body><a id="fuck-sopa" href="http://americancensorship.org"></a><div id="wrapper"><header><h1><a class="pjax" href="/">Derek Payton</a></h1><nav><a class="pjax" href="/activity/">Activity</a><a class="pjax" href="/writing/">Writing</a><a class="pjax" href="/projects/">Projects</a><a class="pjax" href="/about/">About</a><a class="pjax" href="/resume/">Résumé</a></nav></header><div id="main"><div id="content" class="404"><h1>four-oh-four</h1><p>There isn't anything to see here.</p></div></div><footer><span>Copyright 2012 Derek Payton</span><br /><a href="http://creativecommons.org/licenses/by/3.0/us/" rel="nofollow">Some Rights Reserved</a><br />Sat, 25 Feb 2012 14:36:36 -0800
+    </footer></div><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-2045660-5");
+pageTracker._setDomainName(".dmpayton.com");
+pageTracker._trackPageview();
+} catch(err) {}
+</script></body></html>

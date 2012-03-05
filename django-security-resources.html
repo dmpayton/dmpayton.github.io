@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Django Security Resources | dmpayton.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="icon" href="./theme/img/favicon.png" />
+    <link rel="stylesheet" href="./theme/css/dmpayton.css" type="text/css" />
+    <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="dmpayton.com" />
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+
+<body class="article django-security-resources">
+
+<a href="http://github.com/dmpayton/" id="github-ribbon">
+    <img src="./theme/img/github-ribbon.png" alt="Fork me on Guthub!" />
+</a>
+
+<div id="wrapper">
+    <header id="header">
+        <h1><a href="/">Derek Payton</a></h1>
+        <nav>
+            <ul>
+                <li><a href="/archives.html">Blog</a></li>
+                <li><a href="/pages/projects.html">Projects</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <!--<li><a href="/pages/resume.html">Résumé</a></li>-->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Grumble grumble... -->
+    <div class="clear"></div>
+
+    <div id="main">
+        <div id="content" class="">
+            
+    <h1 class="title">
+        <a href="" rel="bookmark" title="Permalink to Django Security Resources">Django Security Resources</a>
+    </h1>
+    <p class="semibold">Posted January 09, 2012</p>
+    <p>Security is a complex beast and is not just limited to the application level (i.e., your Django project); there are several layers above and below your web app where a security hole could be disastrous for you or your users. Only a full security audit from a competent security professional can tell you if your site is secure.</p>
+<p>That said, I hope this post will help ensure your Django site is <em>reasonably</em> secure. I am by no means an expert in web application security, and this post is as much for my own reference as it is for yours. I will try to keep this information up to date as time goes on. If you have any suggestions, <a href="/">please let me know</a>.</p>
+<!-- **Last Updated: 2012-01-09** -->
+
+<h2>Literature</h2>
+<p><a href="https://docs.djangoproject.com/en/dev/topics/security/">Django Documentation &mdash; Security in Django</a></p>
+<p><a href="http://www.djangobook.com/en/2.0/chapter20/">The Django Book &mdash; Chapter 20: Security</a></p>
+<h2>Django Apps</h2>
+<p><a href="https://github.com/dmpayton/django-admin-honeypot">django-admin-honeypot</a> &mdash; "A fake Django admin login screen to notify admins of attempted unauthorized access." <span class="small light">(Disclaimer: I made this.)</span></p>
+<p><a href="https://github.com/codekoala/django-axes">django-axes</a> &mdash; "A very simple way for you to keep track of failed login attempts, both for the Django admin and for the rest of your site." Useful for throttling login attempts and preventing brute-force password attacks.</p>
+<p><a href="https://bitbucket.org/dwaiter/django-bcrypt">django-bcrypt</a> &mdash; "Makes it easy to use bcrypt to hash passwords with Django. <a href="http://codahale.com/how-to-safely-store-a-password/">You should be using bcrypt.</a>"</p>
+<p><a href="https://github.com/carljm/django-secure">django-secure</a> &mdash; "Helping you remember to do the stupid little things to improve your Django site's security."</p>
+<p><a href="https://github.com/paulosman/django-xframeoptions">django-xframeoptions</a> &mdash; Django middleware to add the <code>X-Frame-Options</code> HTTP header to prevent clickjacking attacks.</p>
+<h2>Presentations</h2>
+<p><a href="http://blip.tv/djangocon/advanced-security-topics-5573326">Advanced Security Topics, DjangoCon 2011</a> [video] &mdash; "An in-depth look (with demonstrations) at the how and why of several advanced security topics. Discussion of ways to improve security of the framework moving forward."</p>
+<p><a href="http://www.slideshare.net/levigross/django-web-application-security">Django Web Application Security
+</a> [slides]</p>
+
+    
+    <p class="tags">
+        This post is filed under
+        
+            
+            
+            <a href="/tag/django.html">django</a>
+            
+             and 
+            <a href="/tag/security.html">security</a>.
+    </p>
+    
+
+        </div>
+    </div>
+
+    <footer id="footer">
+        <span>Copyright 2012 Derek Payton</span><br />
+        <a href="http://creativecommons.org/licenses/by/3.0/us/" rel="nofollow">Some Rights Reserved</a>
+    </footer>
+</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-2045660-5");
+pageTracker._setDomainName(".dmpayton.com");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+</body>
+</html>

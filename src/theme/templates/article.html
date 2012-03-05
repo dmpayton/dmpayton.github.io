@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }} | {{ super() }}{% endblock %}
+
+{% block bodyclass %}article {{ article.slug }}{% endblock %}
+
+{% block content %}
+    <h1 class="title">
+        <a href="{{ pagename }}" rel="bookmark" title="Permalink to {{ article.title }}">{{ article.title }}</a>
+    </h1>
+    <p class="semibold">Posted {{ article.date.strftime('%B %d, %Y') }}</p>
+    {{ article.content }}
+
+    {% if article.tags %}
+    <p class="tags">
+        This post is filed under
+        {% for tag in article.tags %}
+            {% if not loop.first and article.tags|count > 2 %}, {% endif %}
+            {% if loop.last and article.tags|count > 1 %} and {% endif %}
+            <a href="/tag/{{ tag }}.html">{{ tag }}</a>{% endfor %}.
+    </p>
+    {% endif %}
+{% endblock %}

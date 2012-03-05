@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} | {{ super() }}{% endblock %}
+
+{% block bodyclass %}page {{ page.slug }}{% endblock %}
+
+{% block content %}
+    {% if not page.hide_title %}
+    <h1 class="title">{{ page.title }}</h1>
+    {% endif %}
+    {{ page.content }}
+{% endblock %}

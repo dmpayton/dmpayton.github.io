@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Tags | {% endblock %}
+
+{% block bodyclass %}tags{% endblock %}
+
+{% block content %}
+    <ul>
+        {% for tag, weight in tag_cloud %}
+            <li class="tag-{{ weight }}"><a href="/tag/{{ tag }}.html">{{ tag }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

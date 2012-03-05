@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Blog | {% endblock %}
+
+{% block bodyclass %}archives entrylist{% endblock %}
+
+{% block content %}
+    <h1 class="title">Blog</h1>
+    {% set datestamp = "" %}
+    {% for article in dates|reverse %}
+        {% if article.date.strftime('%B %Y') != datestamp %}
+            {% set datestamp = article.date.strftime('%B %Y') %}
+            <h2>{{ datestamp }}</h2>
+        {% endif %}
+        <p>
+            <a href="{{ SITEURL }}/{{ article.url }}" class="title">{{ article.title }}</a>
+            {% if article.intro %}<span>&mdash; {{ article.intro }}</span>{% endif %}
+            {% if article.tags %}<span class="tags">({% for tag in article.tags %}<a href="{{ SITEURL }}/tag/{{ tag }}.html">{{ tag }}</a>{% if not loop.last %}, {% endif %}{% endfor %})</span>{% endif %}
+        </p>
+    {% endfor %}
+    <div class="alltags">
+        <a href="{{ SITEURL }}/tags.html">View all tags</a>
+    </div>
+{% endblock %}

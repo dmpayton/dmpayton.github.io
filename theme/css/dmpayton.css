@@ -1,0 +1,219 @@
+
+/* imports */
+@import url("normalize.css");
+@import url("pygments-friendly.css");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700");
+
+
+/* tags */
+a {
+    color: #369;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #036;
+    text-decoration: underline;
+}
+
+body {
+    background: #ddd url('../img/bg-texture.png');
+    color: #222;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3 {
+    /*font-family: 'Bitter', serif;*/
+    /*font-weight: 700;*/
+}
+h1 { font-size: 1.4em; }
+h2 { font-size: 1.2em; }
+h3 { font-size: 1.0em; }
+
+hr {
+    border: 0px;
+    border-top: #ddd 1px solid;
+    margin: 1em 0px;
+}
+
+
+/* helpers */
+.left { text-align: left !important; }
+.center { text-align: center !important; }
+.right { text-align: right !important; }
+.clear { clear: both !important; }
+.semibold { font-weight: 600 !important; }
+
+
+/* core layout */
+#github-ribbon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#wrapper {
+    -moz-box-shadow:    0px 0px 20px 0px #ccc;
+    -webkit-box-shadow: 0px 0px 20px 0px #ccc;
+    box-shadow:         0px 0px 20px 0px #ccc;
+
+    -webkit-border-radius: 3px;
+    -moz-border-radius:    3px;
+    border-radius:         3px;
+
+    background: #fff;
+    margin: 2em auto;
+    padding: 30px 40px;
+    width: 700px;
+}
+
+#header h1 {
+    float: left;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 0px;
+}
+
+#header h1 a {
+    color: #000;
+}
+
+#header h1 a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+#header nav {
+    float: right;
+}
+
+#header nav ul {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+#header nav ul li {
+    display: block;
+    float: left;
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 0px;
+    margin-left: 1em;
+    padding: 0px;
+}
+
+#header nav ul li:first-child {
+    margin-left: 0px;
+}
+
+#header nav ul li a {
+    display: block;
+    float: left;
+}
+
+#main {
+    border: #ddd 1px solid;
+    border-left: 0px;
+    border-right: 0px;
+    clear: both;
+    line-height: 1.4;
+    margin: 20px 0px;
+    padding: 20px 0px;
+}
+
+#content > *:first-child { margin-top: 0px; }
+#content > *:last-child { margin-bottom: 0px; }
+
+
+#footer {
+    color: #333;
+    font-size: .7em;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* pages */
+/*body.home #main {
+    font-size: 1.4em;
+}*/
+
+body.projects #content h2 {
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+body.projects #content p { margin-top: 0px; }
+
+body.kusc-android #content .screenshot {
+    -moz-box-shadow:    0px 0px 20px 0px #eee;
+    -webkit-box-shadow: 0px 0px 20px 0px #eee;
+    box-shadow:         0px 0px 20px 0px #eee;
+
+    display: block;
+    float: right;
+    margin: 0px 0px 40px 40px;
+}
+
+body.resume #content h1,
+body.resume #content h2 {
+    margin: 0px;
+}
+
+body.resume #content h2 {
+    font-weight: 600;
+}
+
+body.kusc-android #content .screenshot img {
+    display: block;
+    height: 350px;
+    width: 210px;
+}
+
+/* blog */
+body.article p.tags {
+    font-style: italic;
+    text-align: right;
+}
+
+body.entrylist #content p {
+    margin-left: 1em;
+}
+
+body.entrylist #content p a.title {
+    font-weight: 600;
+}
+
+body.entrylist #content p span.tags {
+    color: #777;
+    font-size: .8em;
+}
+
+body.entrylist #content p span.tags a {
+    color: #777;
+}
+
+body.entrylist #content div.alltags {
+    text-align: right;
+}
+
+body.tags #content ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+body.tags #content ul li {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+
+body.tags #content ul li.tag-1 { font-size: 1.6em }
+body.tags #content ul li.tag-2 { font-size: 1.4em }
+body.tags #content ul li.tag-3 { font-size: 1.2em }
+body.tags #content ul li.tag-4 { font-size: 1em }
