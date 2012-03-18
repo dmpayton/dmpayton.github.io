@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Automating Web Accessibility | dmpayton.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="icon" href="./theme/img/favicon.png" />
+    <link rel="stylesheet" href="./theme/css/dmpayton.css" type="text/css" />
+    <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="dmpayton.com" />
+
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+
+<body class="article automating-web-accessibility">
+
+<a href="http://github.com/dmpayton/" id="github-ribbon">
+    <img src="./theme/img/github-ribbon.png" alt="Fork me on Guthub!" />
+</a>
+
+<div id="wrapper">
+    <header id="header">
+        <h1><a href="/">Derek Payton</a></h1>
+        <nav>
+            <ul>
+                <li><a href="/archives.html">Blog</a></li>
+                <li><a href="/pages/projects.html">Projects</a></li>
+                <li><a href="/pages/about.html">About</a></li>
+                <!--<li><a href="/pages/resume.html">Résumé</a></li>-->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Grumble grumble... -->
+    <div class="clear"></div>
+
+    <div id="main">
+        <div id="content" class="">
+            
+    <h1 class="title">
+        <a href="" rel="bookmark" title="Permalink to Automating Web Accessibility">Automating Web Accessibility</a>
+    </h1>
+    <p class="semibold">Posted March 17, 2012</p>
+    <p><a class="reference external" href="https://us.pycon.org/2012/">PyCon</a> was last week, and two things really caught my eye. First, <a class="reference external" href="http://rclemons.net/">Robbie Clemons</a> gave a talk on <a class="reference external" href="http://pyvideo.org/video/633/how-to-make-your-websites-more-accessible">How to make your websites more accessible</a>. Second, <a class="reference external" href="http://therealkatie.net/">Katie Cunningham</a> had a poster on <a class="reference external" href="http://pyvideo.org/video/706/12-accessibility-and-you">Accessibility and You</a>. I found both of these very informative, and I was glad to see people talking about making the web accessible.</p>
+<div class="section" id="let-s-talk-about-web-accessibility">
+<h2>Let's talk about web accessibility</h2>
+<p><strong>Web accessibility is important</strong>. In the United States there are tens of millions of people with a wide range of disabilities. Many websites simply lose these people as users and as customers because they are not accessible.</p>
+<p><strong>Web accessibility is easy</strong>. If you do it right, web accessibility is really not all that complicated. In fact, there's a lot of overlap between web accessibility and SEO. The problem is that SEO tuning is where a lot of developers tend to stop.</p>
+<p>During PyCon, a co-worker and I got to talking about how to make the web more accessible. What if accessibility testing was easier? What if we could automate it? What if our test suite failed if our site wasn't accessible? Hmm...</p>
+</div>
+<div class="section" id="introducing-webalin">
+<h2>Introducing webalin</h2>
+<p><a class="reference external" href="https://github.com/dmpayton/webalin">Webalin</a> is an accessibility linter that can be used from the command line or within your code. It can take a full HTML document or a URL, and runs accessibility tests over the markup and spits out potential issues.</p>
+<div class="section" id="a-short-demo">
+<h3>A Short Demo</h3>
+<p><a class="reference external" href="http://section508.gov/">Section 508</a> of the <a class="reference external" href="http://en.wikipedia.org/wiki/Rehabilitation_Act_of_1973#Section_508">Rehabilitation Act of 1973</a> mandates that U.S. Federal agencies must make their electronic and information technology accessible to people with disabilities.</p>
+<p>Recently the U.S. government has started asserting its control over several top-level domains, and has seized many domains over (potentially questionable?) copyright infringement allegations. If you head over to <a class="reference external" href="http://megaupload.com/">MegaUpload</a>, you can see that the domain seizure notice consists of a single image with <em>lots</em> of text. Lets see how accessible this is:</p>
+<div class="highlight"><pre><span class="nv">$ </span>webalin http://megaupload.com
+E: -: &lt;!DOCTYPE&gt; is missing
+E: 4: &lt;img:/banner.jpg&gt; is missing <span class="o">[</span>alt<span class="o">]</span>
+</pre></div>
+<p>The command-line utility output messages as <tt class="docutils literal">[type]: [line no]: [message]</tt>.</p>
+<p>As you can see, this is clearly <strong>not</strong> Section 508 compliant. A visually disabled person with a screen reader would have absolutely no idea what is going on with the domain. (Someone should really get on that...)</p>
+</div>
+<div class="section" id="looking-to-the-future">
+<h3>Looking to the future</h3>
+<p>The current incarnation of webalin only checks the markup. This is a good start, but there's so much more to testing accessibility. How accessible is your page after the CSS and JS have been loaded?</p>
+<p>In the future, I would like to explore using an in-browser testing framework -- such as <a class="reference external" href="http://seleniumhq.org/">Selenium</a> -- to create a more comprehensive test suite. Django 1.4 will have better integration for this kind of thing and will likely be a good place to start.</p>
+</div>
+<div class="section" id="get-involved-please">
+<h3>Get involved! Please?</h3>
+<p>I am by no means an accessibility expert. At best, I am a mediocre programmer with an interest in helping make the web accessible. :) Please do not hesitate contribute in any way, <em>especially</em> if you have experience in this area.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/dmpayton/webalin">Fork webalin on Github</a></li>
+<li><a class="reference external" href="http://webalin.readthedocs.org/">Documentation on ReadTheDocs</a></li>
+</ul>
+</div>
+</div>
+
+
+    
+    <p class="tags">
+        This post is filed under
+        
+            
+            
+            <a href="/tag/python.html">python</a>
+            
+             and 
+            <a href="/tag/accessibility.html">accessibility</a>.
+    </p>
+    
+
+        </div>
+    </div>
+
+    <footer id="footer">
+        <span>Copyright 2012 Derek Payton</span><br />
+        <a href="http://creativecommons.org/licenses/by/3.0/us/" rel="nofollow">Some Rights Reserved</a>
+    </footer>
+</div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-2045660-5");
+pageTracker._setDomainName(".dmpayton.com");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+</body>
+</html>

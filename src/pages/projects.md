@@ -1,6 +1,6 @@
 Title: Projects
 
-## [Snaaaakes!](http://snaaakes.com)
+## [Snaaakes!](http://snaaakes.com)
 Online journal for snake owners to track the health and habits of their animals.
 
 ## [django-admin-honeypot](https://github.com/dmpayton/django-admin-honeypot)

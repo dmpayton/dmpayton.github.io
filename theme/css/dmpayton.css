@@ -1,8 +1,8 @@
 
 /* imports */
+@import url("http://fonts.googleapis.com/css?family=Inconsolata|Open+Sans:400italic,600italic,700italic,400,600,700");
 @import url("normalize.css");
 @import url("pygments-friendly.css");
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700");
 
 
 /* tags */
@@ -20,7 +20,7 @@ body {
     background: #ddd url('../img/bg-texture.png');
     color: #222;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.1em;
+    font-size: 1em;
     margin: 0px;
     padding: 0px;
 }
@@ -39,6 +39,11 @@ hr {
     margin: 1em 0px;
 }
 
+tt {
+    background: #eee;
+    font-family: "Andale Mono", "Lucida Console", Monaco, monospace;
+    font-size: .9em;
+}
 
 /* helpers */
 .left { text-align: left !important; }
