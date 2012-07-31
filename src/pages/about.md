@@ -1,6 +1,6 @@
 Title: About
 
-I am a 24 year-old software developer who specializes in web application development using [Django](https://www.djangoproject.com/). I have worked at all levels of the web stack, including front-end and back-end development, and system administration.
+I am a 25 year-old software developer who specializes in web application development using [Django](https://www.djangoproject.com/). I have worked at all levels of the web stack, including front-end and back-end development, and system administration.
 
 I always strive to write clean, maintainable code, and I follow standards, best practices, and common idioms where applicable. My primary technical interests revolve around web application architecture and scalability.
 
