@@ -6,10 +6,16 @@ A driven, enthusiastic developer with several years of experience building web a
 ***
 
 # Web Developer
-## Cuker Interactive, April 2009 – Present
-* Developed, launched, and maintained brochure, ecommerce, and mobile websites for clients such as Sony, Callaway Golf, DC Shoes, Alpinestars, Manduka, ViX Swimwear, and The San Diego Union-Tribune.
+## Edit, August 2012 - Present
+* Helped guide early-stage development of the companies flagship product, Montagable.
+
+***
+
+# Web Developer
+## Cuker Interactive / Web Cube CMS, April 2009 – Present
+* Developed, launched, and maintained brochure, ecommerce, and mobile websites for clients such as Sony, Callaway Golf, DC Shoes, Rip Curl, Alpinestars, Manduka, ViX Swimwear, and The San Diego Union-Tribune.
 * Half of a two-man team that launched a community website for DC Shoes on a two-week deadline. Features included a message board, video/photo blog, and user activity streams.
-* Developed new features for and helped maintain the companies flagship CMS & E-Commerce product, WebCube.
+* Developed new features for and helped maintain the companies core CMS & E-Commerce product, Web Cube.
 * Developed an order management system, including integration with UPS Worldship and FedEx Ship Manager, to streamline order fulfillment and reduce administrative errors.
 * Sysadmin responsibilities included setup and maintenance of many LAMP-stack web servers.
 

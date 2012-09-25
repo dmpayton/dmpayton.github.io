@@ -4,6 +4,6 @@ I am a 25 year-old software developer who specializes in web application develop
 
 I always strive to write clean, maintainable code, and I follow standards, best practices, and common idioms where applicable. My primary technical interests revolve around web application architecture and scalability.
 
-I was born and raised in Southern California, and I currently live in [Escondido](http://en.wikipedia.org/wiki/Escondido,_California) with my wife and daughter. I work at [Cuker Interactive](http://www.cukerinteractive.com/), where I mainly develop and maintain ecommerce websites for small and medium-sized businesses.
+I'm a California native, and I currently live in [Fresno](http://en.wikipedia.org/wiki/Fresno,_California) with my wife and daughter. I work full-time at [Edit, LLC](http://montagable.com/), part-time at [Web Cube CMS](http://www.webcubecms.com/), and spare-time on [other endeavors of the heart](http://github.com/dmpayton).
 
 This site is powered by [Pythons](http://python.org/), [Pelicans](http://pelican.readthedocs.org/), and [Octocats](https://github.com/dmpayton/dmpayton.github.com).

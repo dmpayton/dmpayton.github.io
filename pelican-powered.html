@@ -5,8 +5,13 @@
     <title>Pelican Powered | dmpayton.com</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="icon" href="./theme/img/favicon.png" />
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Open+Sans:400italic,600italic,700italic,400,600,700" type="text/css" />
+    <link rel="stylesheet" href="./theme/css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="./theme/css/pygments-friendly.css" type="text/css" />
     <link rel="stylesheet" href="./theme/css/dmpayton.css" type="text/css" />
-    <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="dmpayton.com" />
+
+    <link href="./feeds/all.rss.xml" type="application/atom+xml" rel="alternate" title="dmpayton.com" />
 
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
@@ -56,12 +61,37 @@
     </p>
     
 
+    <hr />
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'dmpayton'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
         </div>
     </div>
 
     <footer id="footer">
-        <span>Copyright 2012 Derek Payton</span><br />
-        <a href="http://creativecommons.org/licenses/by/3.0/us/" rel="nofollow">Some Rights Reserved</a>
+        <div class="copyright">
+            <span>Copyright 2012 Derek Payton</span><br />
+            <a href="http://creativecommons.org/licenses/by/3.0/us/" rel="nofollow">Some Rights Reserved</a>
+        </div>
+        <div class="gittip">
+            <iframe style="border: 0; margin: 0; padding: 0;"
+                src="https://www.gittip.com/dmpayton/widget.html"
+                width="48pt" height="20pt"></iframe>
+        </div>
     </footer>
 </div>
 
@@ -77,6 +107,5 @@ pageTracker._setDomainName(".dmpayton.com");
 pageTracker._trackPageview();
 } catch(err) {}
 </script>
-
 </body>
 </html>

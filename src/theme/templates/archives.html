@@ -7,7 +7,7 @@
 {% block content %}
     <h1 class="title">Blog</h1>
     {% set datestamp = "" %}
-    {% for article in dates|reverse %}
+    {% for article in dates %}
         {% if article.date.strftime('%B %Y') != datestamp %}
             {% set datestamp = article.date.strftime('%B %Y') %}
             <h2>{{ datestamp }}</h2>
